@@ -1,12 +1,13 @@
-apt-get update
-apt-get install libglib2.0-0
-apt-get install -y libsm6 libxext6 libxrender-dev
+sudo apt-get update
+sudo apt-get install libglib2.0-0
+sudo apt-get install -y libsm6 libxext6 libxrender-dev
 pip install opencv-python
 
 #oh my tmux installation
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
+
 #SSH config file to run vast ai with vscode
 # Host vast_ai_instance
 #     HostName ssh4.vast.ai
